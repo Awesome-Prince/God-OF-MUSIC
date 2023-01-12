@@ -5,5 +5,5 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 COPY . /app/
 WORKDIR /app/
-RUN pip3 install --r requirements.txt
+RUN pip3 install --requirement requirements.txt
 CMD bash start
